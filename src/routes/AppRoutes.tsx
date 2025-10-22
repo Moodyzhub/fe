@@ -28,6 +28,7 @@ import TutorCourses from '@/pages/TutorCourses/index';
 import MyCourses from '@/pages/MyCourses/index';
 import PaymentHistory from "@/pages/PaymentHistory";
 import MyEnrollments from "@/pages/MyEnrollments";
+import ApplyTutor from '@/pages/ApplyTutor/index';
 
 export function AppRoutes() {
         return (
@@ -55,6 +56,7 @@ export function AppRoutes() {
                     <Route path={ROUTES.PAYMENT} element={<Payment />} />
                     <Route path={ROUTES.POLICY} element={<PolicyPage />} />
                     <Route path="/languages/:language" element={<LanguageCourses />} />
+                    <Route path="/learner/apply-tutor" element={<ApplyTutor />} />
                     <Route path="*" element={<NotFound />} />
                     <Route path="/payment-history" element={<PaymentHistory/>}/>
                     <Route path="/my-enrollments" element={<MyEnrollments/>}/>
